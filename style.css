@@ -32,6 +32,7 @@ h1 {
 .header-details {
   color: #696969;
   margin-bottom: 50px;
+  width: 80%;
 }
 .button {
   text-decoration: none;
@@ -44,4 +45,8 @@ h1 {
 }
 .dream-section {
   display: flex;
+  background-image: url(images/dream-bg.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-bottom: 80px;
 }
