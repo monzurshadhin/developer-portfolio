@@ -56,6 +56,10 @@ h1 {
   background-repeat: no-repeat;
   background-position: left center;
 }
+.experience-section h1 {
+  padding-left: 20px;
+}
+
 .experience-section h2 {
   font-size: 40px;
 }
