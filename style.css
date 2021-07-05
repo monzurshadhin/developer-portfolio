@@ -16,17 +16,19 @@ h1 {
 }
 .top-banner {
   display: flex;
+  flex-direction: row;
   background-image: url(images/top-banner.png);
   background-repeat: no-repeat;
   margin-bottom: 80px;
 }
 .half-width {
-  width: 50%;
+  flex: 40%;
   padding-left: 5%;
   padding-top: 60px;
 }
 .half-width img {
-  width: 80%;
+  width: 70%;
+  padding-top: 50px;
 }
 
 .header-details {
@@ -76,7 +78,7 @@ h1 {
   /*ofset-x,ofset-y,blur-radius,spread-radius,color */
   box-shadow: 10px 10px 30px 10px #888888;
 
-  width: 40%;
+  flex: 40%;
   padding: 40px;
   margin: 5%;
   border-radius: 5px;
@@ -97,4 +99,19 @@ footer p {
   text-align: center;
   color: #888888;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 1200px) {
+  .top-banner {
+    flex-direction: column-reverse;
+  }
+  .dream-section {
+    flex-direction: column;
+  }
+  .main-div {
+    flex-direction: column;
+  }
+  .half-width img {
+    width: 50%;
+    padding-top: 50px;
+  }
 }
